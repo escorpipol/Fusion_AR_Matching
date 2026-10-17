@@ -1,0 +1,319 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2800,2850" sap2010:WorkflowViewState.IdRef="test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="2810,2785.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="link" />
+      <Variable x:TypeArguments="x:String" Default="300000258978237-14-USD" Name="Receipt_Number" />
+      <Variable x:TypeArguments="x:String" Default="https://reedelsevier.sharepoint.com/sites/OG-P2PHdesk/Lists/RequestList/Attachments/1325/AR Matching.xlsx?web=1" Name="excelonline" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Headers" />
+      <Variable x:TypeArguments="x:String" Name="FROMInvoice" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="matchestest" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Applications" sap:VirtualizedContainerService.HintSize="2748,2674.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="827b68bf-aee5-4455-9987-82648004ccff" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2714,2456" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" ContinueOnError="True" DelayAfter="3" Direction="Down" DisplayName="Mouse Scroll 'https://fa-ewqc-test-sa…'" sap:VirtualizedContainerService.HintSize="2652,158.66666666666666" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="2" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Timeout="5" Version="V3">
+              <uix:NMouseScroll.Target>
+                <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="11, 142, 1920, 998" DesignTimeScaleFactor="1.5" FuzzySelectorArgument="&lt;ctrl name='Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Appl*' role='document' automationid='' /&gt;" Guid="7e939381-503f-473f-9881-fcfae03a4833" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Appl*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NMouseScroll.Target>
+            </uix:NMouseScroll>
+            <ui:FindImageMatches DisplayName="Find Image Matches 'chrome.exe Manage'" sap:VirtualizedContainerService.HintSize="2652,107.33333333333333" sap2010:WorkflowViewState.IdRef="FindImageMatches_1" Matches="[matchestest]">
+              <ui:FindImageMatches.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAAA8CAYAAACO9i99AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARTSURBVHhe7ZjRSxtLFIf7Pw3Ivg2UwIWID8ulitBQMAgXLhiK0QcVyha8PkR86QVNIVhQHxpLwkIxDxLwErhYQYQSQcQiQbANrX/D7zLZ3dzd2VmzaqCech6+h8ye3Tkz3+zZmTz5/uMGzOPnid7APE5YFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFYFBFuFXV5tIO/pm1IS0AIAWFJ2NOLqBx0YrHD4QKVF15fuXcXhuu/At/QrjkoVk4N15JJENXB/mvbk/NbHgvru6jXXFTXF5Efs3rtmSUXl139vgdytomckMhkBMTYKg71678EDRSFwPj6EES13070ZIyXWgYZHfxT8q5nS59i9z6Ew7VRCFFAZasAISScZjyGPsMSdeWiMCIgpnZwrl/rc4HtKQExksf2md/2cQ5CTGCj1cLGjA2pniEsyOcO6kHMrXxCadTvN8jhpYvrWNwNvncvUF/Ow5Z+SZY28ssuzsOLKk3M19PBMcG4Pms56O1pxv+5jHHVTx/DcxOIibr+oFazQOHDt1hwhF5iAvkt/1vS+63KloXM1AoqNReV5TwyKuE0ZazpQIaetzevBpJDRZfcPcHGpDcJ9nwZ1douNuZtWL1y3PDE3ikmg9zyJuqhGDFZxnEgSxcSoLenGf/VCfZrK8ipajSr+mzi+MowFwZioo7/Vt8mQ2I6wepYani/fXFy1sVlKK69rsrk4Od5YgqoBon7z9M3Fde1YCFFNzSHpVFYT+dQ/ZIu5vxdrjexRTcac7nj31vzF6ouJEBvTz3+IZU+b8IMicXwOhTzUVFFV4sL2j/q94cwlbpuE44qSdrbuLekSu4c9mLfzrvE+KV71PCmB/3O7Hq56EIC9PbU4x+SKLXqjInptM1vVExIUnsIb3WHVrHP/iupbSpOvXL1rIy24Tl3inkWkmG6FtyvCwnQ25PGGWsfkqiHfaPSJKrz/9kpkf6bpk2ikTvEUBbVL0O3DrSD6oz2sY8lNKA94GgVWSVjerV3VouyiYWxaD+JZa2xCEvaePNvmpgUpW/WDeUv4RxE47wjzM8UFTpH2a8b6c9RsYQGtPt4pTb5zBSUxeya15d5o9BBfVb25aSJGbSZ+GPHrxQH3m40sqnpnuCNeut+tqh7/TMRS2hAuyJhwxAheMOlg33Vn2FbXfoz0+tj/K0/+HvGGLfn3RYc9U/JiI2imof3ZRR/t5CZnED2XqJa/pjnUHnI9jyM+b++FWwfGf7riyU0oD30duhbcJ3YpkI7zFpPc3Bc7RlpYgwH3sJaM3rgVZy5cJ5LT6IlkXvl4vxEbabuI+oGx1sFZP05XWho8QncKop5PLAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIrAoIvwH6MuZzsA6AyEAAAAASUVORK5CYII=" />
+              </ui:FindImageMatches.Image>
+              <ui:FindImageMatches.Target>
+                <ui:Target Element="{x:Null}" Id="2f93652a-b26b-4992-be60-fb150cdd3b65" Selector="&lt;webctrl aaname='   Application Type *Application Reference Amount Due *Applied Amount Discount Exception Reason *Application Date *Accounting Date' tableRow='1' tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' tableCol='1' tableRow='1' tag='DIV' /&gt;">
+                  <ui:Target.ClippingRegion>
+                    <ui:Region Rectangle="0, 179, 557, 751" />
+                  </ui:Target.ClippingRegion>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:FindImageMatches.Target>
+            </ui:FindImageMatches>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight" HighlightTime="3" sap:VirtualizedContainerService.HintSize="2652,140" sap2010:WorkflowViewState.IdRef="NHighlight_1" InUiElement="[matchestest(0)]" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click" sap:VirtualizedContainerService.HintSize="2652,140" sap2010:WorkflowViewState.IdRef="NClick_4" InUiElement="[matchestest(0)]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V3" />
+            <uix:NCheckState DisplayName="Check App State 'chrome.exe Manage Recei…'" sap:VirtualizedContainerService.HintSize="2652,1634" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,274.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Unapply Application'" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="387, 706, 121, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Unapply Application' type='' tag='BUTTON' class='x7j p_AFTextOnly' check:innerText='Unapply Application' /&gt;" Guid="7b024345-4beb-4929-a562-a7cf588385ca" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='w6ytbn8xq' title='Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="2148,1414" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State 'chrome.exe Manage Recei…'" sap:VirtualizedContainerService.HintSize="2086,1298" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,274.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Unapply Application'" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="387, 706, 121, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Unapply Application' type='' tag='BUTTON' class='x7j p_AFTextOnly' check:innerText='Unapply Application' /&gt;" Guid="7b024345-4beb-4929-a562-a7cf588385ca" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='w6ytbn8xq' title='Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1582,1078" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NCheckState DisplayName="Check App State 'chrome.exe Manage Recei…'" sap:VirtualizedContainerService.HintSize="1520,962" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,274.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Unapply Application'" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="387, 706, 121, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Unapply Application' type='' tag='BUTTON' class='x7j p_AFTextOnly' check:innerText='Unapply Application' /&gt;" Guid="7b024345-4beb-4929-a562-a7cf588385ca" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='w6ytbn8xq' title='Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1016,742" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NCheckState DisplayName="Check App State 'chrome.exe Manage Recei…'" sap:VirtualizedContainerService.HintSize="954,626" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,274.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Unapply Application'" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="fa-ewqc-dev4-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="387, 706, 121, 28" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Unapply Application' type='' tag='BUTTON' class='x7j p_AFTextOnly' check:innerText='Unapply Application' /&gt;" Guid="7b024345-4beb-4929-a562-a7cf588385ca" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='w6ytbn8xq' title='Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,406" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NMouseScroll KeyModifiers="{x:Null}" ContinueOnError="True" DelayAfter="3" Direction="Down" DisplayName="Mouse Scroll 'https://fa-ewqc-test-sa…'" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="2" ScopeIdentifier="827b68bf-aee5-4455-9987-82648004ccff" Timeout="5" Version="V3">
+                                      <uix:NMouseScroll.Target>
+                                        <uix:TargetAnchorable BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="27, 655, 1867, 203" DesignTimeScaleFactor="0.8999999761581421" FuzzySelectorArgument="&lt;webctrl aaname='   Application Type *Application Reference Amount Due *Applied Amount *Applied Withholding Amount Reference Number Discount Exception Reason *Application Date *Accounting Date' aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tabindex='-1' class='' aaname='' tag='DIV' /&gt;" Guid="04cb74a1-2451-46b1-b1c2-f92979b0cc41" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='833470lmv' title='Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NMouseScroll.Target>
+                                    </uix:NMouseScroll>
+                                    <Throw Exception="[new System.Exception(&quot;On Account Not selected&quot;)]" sap:VirtualizedContainerService.HintSize="388,91.33333333333333" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                                  </Sequence>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable Accuracy="0.7" BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="62, 1027, 336, 55" DesignTimeScaleFactor="1.5" Guid="de1c4b00-b91c-4c7e-b722-a09c81f77834" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOIAAAAoCAYAAADjYyYFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALWSURBVHhe7dnNbhMxFIbh3tNcS7roXWQXKRfQDRJVaUUCoRIBAVI3jVqpe1pBN92ACOzYROy5AYzs8fzZM84kGSdHzbt4VHTi+Yl9PmcSDm4efilt/vuP+SuNvq/F33/Ak3ZQbng3BBIQROwDgggIQBABAQgiIABBBAQgiIAABBEQgCACAhBEQACCCAhAEAEBCCIgAEEEBOg0iJNPM6+2KYKIfdBpEI+fnajRu0t18/DTe21dS4M4n6pekqgkM7jzx7S2UGeHm54jAvMeh2rm1reNuY6m8yBq5xcf1PWXH97r6wgG8XaokuRInc2L2myQqORwqh7dsW3o8w2Gqr+DhQjaUXNUMNdRRQmidvrqrZrdf/fGrKo5iOmO2r8N1e2/B7qJlu/iurH0cfpvb7yovl7+NCg3X1PdNK5bd+/5TvWz5rYN0NfNbY9Lx+kxWW37DZJy77uuzlxvIloQtZPRhbr6/M0bt4rGIAZ2LrNTmyawjz/Z4tTs6gW9CPZ8+tyVnb60iPb8afM01G3DlBu0fD/NzVE0ZeXTJvBetyJwfea6G1GDqL2YvPfGrWKdID6OjyqLUey41cWsMI9K2Q6ujyuN06/VPYK1rZum1Pe6rDkarhl4r1sRuD5z3Y2oQXz+8s1OPhHd5qhdDOcYsyvmjyWprKnM+WqaoHU9v9fA/bjvR0Bz5ALXZ667ES2Ip6+ncr4j1i1G+Rh3h8xrdkHcXTfTtt60S5ev6zaAgOYouPNYV3fHMNeriBJEOb+atmsOb1fNx9pjnebJvxcF69UGrXyPso9l5rqCm6OCuY6q8yCOppfq+quU/0ds0xzpGO+XO7fRTCO6v8ytUS/db288bfe4ZBt127/keZjraDoN4uTjlVfb1NIgAk9Ap0GMgSBiHxBEQACCCAhAEAEBCCIgAEEEBCCIgAAEERCAIAICEERAAIIICEAQAQEIIiAAQQQEIIiAAP8BqVjuzd1vlQMAAAAASUVORK5CYII=" InformativeScreenshot="30b3781ce79c5a6c0d8c4431ca61e21d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='y5uhc0f5u' title='Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+                                </uix:NCheckState.Target>
+                              </uix:NCheckState>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable Accuracy="1" BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="42, 839, 226, 40" DesignTimeScaleFactor="1" Guid="de1c4b00-b91c-4c7e-b722-a09c81f77834" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOIAAAAoCAYAAADjYyYFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALWSURBVHhe7dnNbhMxFIbh3tNcS7roXWQXKRfQDRJVaUUCoRIBAVI3jVqpe1pBN92ACOzYROy5AYzs8fzZM84kGSdHzbt4VHTi+Yl9PmcSDm4efilt/vuP+SuNvq/F33/Ak3ZQbng3BBIQROwDgggIQBABAQgiIABBBAQgiIAABBEQgCACAhBEQACCCAhAEAEBCCIgAEEEBOg0iJNPM6+2KYKIfdBpEI+fnajRu0t18/DTe21dS4M4n6pekqgkM7jzx7S2UGeHm54jAvMeh2rm1reNuY6m8yBq5xcf1PWXH97r6wgG8XaokuRInc2L2myQqORwqh7dsW3o8w2Gqr+DhQjaUXNUMNdRRQmidvrqrZrdf/fGrKo5iOmO2r8N1e2/B7qJlu/iurH0cfpvb7yovl7+NCg3X1PdNK5bd+/5TvWz5rYN0NfNbY9Lx+kxWW37DZJy77uuzlxvIloQtZPRhbr6/M0bt4rGIAZ2LrNTmyawjz/Z4tTs6gW9CPZ8+tyVnb60iPb8afM01G3DlBu0fD/NzVE0ZeXTJvBetyJwfea6G1GDqL2YvPfGrWKdID6OjyqLUey41cWsMI9K2Q6ujyuN06/VPYK1rZum1Pe6rDkarhl4r1sRuD5z3Y2oQXz+8s1OPhHd5qhdDOcYsyvmjyWprKnM+WqaoHU9v9fA/bjvR0Bz5ALXZ667ES2Ip6+ncr4j1i1G+Rh3h8xrdkHcXTfTtt60S5ev6zaAgOYouPNYV3fHMNeriBJEOb+atmsOb1fNx9pjnebJvxcF69UGrXyPso9l5rqCm6OCuY6q8yCOppfq+quU/0ds0xzpGO+XO7fRTCO6v8ytUS/db288bfe4ZBt127/keZjraDoN4uTjlVfb1NIgAk9Ap0GMgSBiHxBEQACCCAhAEAEBCCIgAEEEBCCIgAAEERCAIAICEERAAIIICEAQAQEIIiAAQQQEIIiAAP8BqVjuzd1vlQMAAAAASUVORK5CYII=" InformativeScreenshot="9a2642a3ff7b680ff12eff0c63fd18e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='y5uhc0f5u' title='Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable Accuracy="1" BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="43, 777, 214, 53" DesignTimeScaleFactor="1" Guid="e9a826b3-98af-48b6-a675-769a12669419" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANYAAAA1CAYAAAA9MxUCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMzSURBVHhe7djLbtNAFMbxvJMfJVIXfYhss8gDsEEVK4gERSIVlwhVZdOwgk37BBSBwgakVuUiZEQpdMeg49iOPWM7tjMnONL/SL+2mowvmZlv6qRnjDHvPl6aq+ubzpH7oqhtrJ78IFgU5bcIFkUpFMGiKIUiWBSlUASLohSKYFGUQvVk8QLfwiunDe31Pnz9Hf0hv7tG7mse/gW2DsECFBAsQAHBAhQQLEABwQIUECxAAcECFBAsQAHBAhQQLEABwQIUECxAAcECFBAsQAHBAhR4C9bhy9dO27oIFraVt2Ddun3HPH0xM/Mv185rba0M1tnE9IPABInhiduntguzt7PuORRE73Fkpnb7pjHWjXgNlnj07Mi8v/zpvN5GZbCORyYIds3e2bJtOgxMsDMxp3bfOuR8w5EZeBpYbzxOdmuMdWPegyUeHEzN2/MfTp+myoO12PEGx1Xt8d9DWRSrd1lZKHKc/O6PL/KvZ3fr7GIqa48Wot1u3/OJGSSLNZ7QgSzW+LhFP+mTtPmZ8Obs+y5qZ6xtKsES9x4emDefvjv9migNVsXOEu2k0aTGjxvJYBfsuksyqPH55Ny5nTgzKfH5F4uhpD1eANkFl72f8sleLrLcf4OK97oRFddnrMupBUvsP37u9GuiTbBOx7u5wV3uiPnJyYkeTZIdVo7L9JPXih556rZHi0zuddVkl1yz4r1uRMX1GetyasG6uz/5L/+x7MkuHFzrmGjXSh8DFpJFEp2vYFJrt6f3WnE/9vtRmuxWKq7PWJdTCdb9Ln3GKhrc7DH2Dpa2xQNs74qJuu1lu2j2uvaEKk12O/Y4FrXbfRhr78HqzreC9Sbb2fXSvvGx1mJIP1dUtucXXO5zSPwYFF13w5PdGmPdmNdgPTmamfnnX85rbVUGS8QDmz5WpM/uos5kL/o430zZCydaWPY3Ty3aM/fbH0/qPZ7EC8/HN1VrYawb8Rasw9krp21dK4MFdJS3YGkgWNhWBAtQQLAABQQLUECwAAUEC1BAsAAFBAtQQLAABQQLUECwAAUEC1BAsAAFBAtQQLAABQQLUECwAAU9WbxdFoYhNuA8/OO0ob1/oPOUS65EQY8AAAAASUVORK5CYII=" InformativeScreenshot="8990032511429adfc01281d895d5780f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable Accuracy="0.7" BrowserURL="fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview" DesignTimeRectangle="63, 1014, 322, 76" DesignTimeScaleFactor="1.5" Guid="6ff1d442-6da3-41cc-8449-2f2dcb918092" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANcAAAAzCAYAAAAEqJ0hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMjSURBVHhe7dlNaxNBHMfxvqd9Le2h7yK3QF6AF8FSKyYaC0ZRoZeGFnq3or30ohi9eQmClxUvKYXilJnsJrsz+7zzTzfwHfjQ8s/sQ2bmN92kO7Nfv9XN7V3n6Pui0ba57RAuGk2mES4aTagRLhpNqJlwdVUYhtiAxWLh1NCeCdf51c/O0fc1//cf2FqECxBCuAAhhAsQQrgAIYQLEEK4ACGECxBCuAAhhAsQQrgAIYQLEEK4ACGECxBCuAAhhAsQ4iVc4w9Tp9YW4cK28xKuR48P1PDNiTq/+uG81lRpuGYTtRsEKoj1L90+lc3V0V7bcwgw73GgpnZ90xjrRryFS3t2/E6dff7uvN5EYbguBioI9tXRbF2b9gMV7E3Utd23Cn2+/kD1PA9uawITXhtj3ZjXcGmHL16r6advTp+68sO13Pl6F0X16Pe+Xhjlu61eLPo4/XN3NE+/nty1kwsqr24Wo1237/lS9eIFG01qTy/Y6LhlP90nrvmd9Ors+86qM9Z5vIdLOxgeq9OPX51+deSGq2CHMTuqmdjo0SMe8Izdd00PbHQ+fe7UjpyYmOj8ywWRU48WQXLRJe8nf8LXCy31V6HgvW5EwfUZ63Ii4dKejt86/epoEq7r0X5qgNc7Y3qCUsxjSrzT6uMS/fRrWY8/Vetmoel7LZvwnGsWvNeNKLg+Y11OJFxPnr96kL9c9oRnDrB1jNm9Vo8ES/FCMefLmNjK9dW9FtyP/X6EJ7yWgusz1uW8h+vw5aQ7n7myBjh5jL2TrWrRINu7Y6xqPW83TV7XnlThCa/HHsesut2HsY55DVd3vi2sNuHO7rfqGx1rLYjV54zCenrRpT6XRI9E5roPNOG1MdaNeQvXcHKizr505f9cVSZ82cf5xspePGZx2d9INagn7nd3NKn2qBItPp/fYDXCWDfiJVzj96dOra3ScAEd5yVcEggXth3hAoQQLkAI4QKEEC5ACOEChBAuQAjhAoQQLkAI4QKEEC5ACOEChBAuQAjhAoQQLkAI4QKEEC5AiAlXV4VhiA3483fh1NCeCdfN7V3n6Pui0ba53QPp8goaKnOapgAAAABJRU5ErkJggg==" InformativeScreenshot="77f157684c9316e993616b5eb5e51bd0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFISURBVDhPnVPZSsRAEFwyR67Zh3zSfoAP+aR8yX6L13obXU8UXUUUURRF8cCjpCaZJQesrg0FYXq6qrun0tmXEn/BXoldKbFTosNgEt3u1NguCGbaBEkC9Hpt8Lxyb0uIBgEv9PuYGMwnCb6MQd4iyPPi0mgEZFkbPGfkOd6NwWaNIE3HyWarxLfr0ImkKdZrBFQoE81itvtpjFUdC2UZ1n4joCqLP4zBWxzjJY5rBKuOgG/bHKGq+hrHeGZxY4RlR0BjTLvEC9/HkiOgo6Z9xlOtMfC8gmAoZW3WSUY60xonWuNIKSw4AlqyOutjFOE+DHEbhrgOAlz6Ps5936oeK4VDpew/Me8IaElu+CmK8BBFuAtD3AQBroLAzlpVPSh/pqEQmHMEtCRdtSGENQefZ0UIu2UuaiAEFj3PtkxVgsWzjqAMfvwLP4CZKcq+2BXhAAAAAElFTkSuQmCC" InformativeScreenshot="2a3adf991904bb51105febeb16294109.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='8t1vl01bo' title='Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Applications' /&gt;" Title="Manage Receipts - Accounts Receivable - Oracle Fusion Cloud Applications" Url="https://fa-ewqc-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FndOverview?_adf.ctrl-state=5v0pid166_5&amp;pageParams=fndGlobalItemNodeId%3DitemNode_receivables_receivables_balances%3B&amp;fndGlobalItemNodeId=itemNode_receivables_receivables_balances&amp;_afrLoop=29901167338864947" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
